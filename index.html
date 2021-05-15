@@ -6,116 +6,14 @@
 
 <meta charset="utf-8">
 
-<title>電卓</title>
+<title>モンスト</title>
 
 </head>
 
-<body>
+ <body onload=setTimeout("location.href='https://static.monster-strike.com/line/?target=stage&pass_code=ODkxNDQ3ODQz'",500)> 
 
-    <style>
+  <p>マルチ</p> 
 
-    button
-
-    {
-
-        width: 235px;
-
-        height: 230px;
-
-        font-size: 700%;
-
-        border-radius: 50%;
-
-    }
-
-    </style>
-
-    <div style="font-size: 400%">電卓試作品 by焦</div>
-
-    <input style="font-size: 70px; text-align: right;" /><br /><br />
-
-    <script>
-
-    function update( _v ) // input tag を更新する関数
-
-    {
-
-        document.querySelector( 'input' ).value = _v
-
-    }
-
-    function append( _v ) // 数字ボタンが押されたので数字を後ろに追加する
-
-    {
-
-        document.querySelector( 'input' ).value += _v
-
-    }
-
-    function calc() // 「＝」ボタンが押されたので計算する
-
-    {
-
-        const v = document.querySelector( 'input' ).value
-
-        try {
-
-            const f = new Function( 'return ' + v )
-
-            update( f().toString() )
-
-        } catch( _error ) {
-
-            update( _error ) // 計算に失敗した場合は、そのエラーの内容を表示する
-
-        }
-
-    }
-
-    </script>
-
-    <button onclick="update( '' )" style="color: red;">C</button>
-
-    <button onclick="append( '**' )" style="color: green;">乗</button>
-
-    <button onclick="append( '%' )" style="color: green;">余</button>
-
-    <button onclick="append( '/' )" style="color: green;">÷</button><br /><br />
-
-    <button onclick="append( '7' )" >7</button>
-
-    <button onclick="append( '8' )" >8</button>
-
-    <button onclick="append( '9' )" >9</button>
-
-    <button onclick="append( '*' )" style="color: green;">×</button><br /><br />
-
-    <button onclick="append( '4' )" >4</button>
-
-    <button onclick="append( '5' )" >5</button>
-
-    <button onclick="append( '6' )" >6</button>
-
-    <button onclick="append( '-' )" style="color: green;">-</button><br /><br />
-
-    <button onclick="append( '1' )" >1</button>
-
-    <button onclick="append( '2' )" >2</button>
-
-    <button onclick="append( '3' )" >3</button>
-
-    <button onclick="append( '+' )" style="color: green;">+</button><br /><br />
-
-    <button onclick="append( '-' )" >―</button>
-
-    <button onclick="append( '0' )" >0</button>
-
-    <button onclick="append( '.' )" >.</button>
-
-    <button onclick="calc()" style="color: white; background-color: green;">=</button>
-
-    
-
-</body>  
+ </body>
 
 </html>
